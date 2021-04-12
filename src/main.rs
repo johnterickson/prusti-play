@@ -12,6 +12,7 @@ fn pred(a: bool) -> bool {
 }
 
 #[predicate]
+#[requires(true ==> true)]
 fn pred_implies(a: bool) -> bool {
     forall(|b: bool| true ==> true)
 }
